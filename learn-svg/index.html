@@ -54,7 +54,82 @@
                     <path d="M 10 100 L 10 20 L 30 20 L 50 40 L 70 20 L 90 20 L 90 100 L 70 100 L 70 60 L 50 80 L 30 60 L 30 100  Z" fill="red" />
                 </svg>
             </div>
+
+            <!-- path (write H)-->
+            <div class="svg-conatiner">
+                <svg>
+                    <path d="M 10 20 L 10 100 L 30 100 L 30 70 L 70 70 L 70 100 L 90 100 L 90 20 L 70 20 L 70 50 L 30 50 L 30 20   Z" fill="orange" />
+                </svg>
+            </div>
         </div>
+        <!-- Grouping -->
+        <div class="svg-container">
+            <svg>
+                <g transform='translate(150 , 25) rotate(45)' >
+                    <rect x="50" y="50" height="50" width="50" fill="orange"/>
+                    <circle r="20" cx="25" cy="25" fill="blue"/>
+                </g>
+
+            </svg>
+        </div>
+
+        <!-- animate -->
+        <div class="svg-container">
+            <svg>
+                
+                <rect x="50" y="50" height="50" width="50" fill="orange">
+                    <animate 
+                    attributeName="y"
+                    values="0;5;50;100;50;5;0"
+                    dur="5s"
+                    repeatCount="indefinite" 
+                    />
+
+                    <animate 
+                    attributeName="x"
+                    values="0;5;50;100;50;5;0"
+                    dur="5s"
+                    repeatCount="indefinite" 
+                    />
+                    <animate 
+                    attributeName="rx"
+                    values="0;5;50;100;50;5;0"
+                    dur="5s"
+                    repeatCount="indefinite" 
+                    />
+
+                    <animate 
+                    attributeName="fill"
+                    values="orange;red;blue;red;orange"
+                    dur="5s"
+                    repeatCount="indefinite" 
+                    />
+                </rect>
+                   
+                
+
+            </svg>
+        </div>
+
+        <!-- animateMotion -->
+        <div class="svg-container">
+            <svg>
+                
+                <path d="M10,50 C10,10 90,10 90,50 C90,90 10,90 10,50" fill="none" stroke="grey" />
+                <circle r="5" fill="red">
+                    <animateMotion
+                    path="M10,50 C10,10 90,10 90,50 C90,90 10,90 10,50"
+                    dur="10s"
+                    repeatCount="infinite"
+                     />
+                </circle>
+                   
+                
+
+            </svg>
+        </div>
+
+
     </div>
 
 
